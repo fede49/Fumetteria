@@ -9,43 +9,41 @@
 
   <form>
     <div class="ion-padding">
-    <ion-grid>
+     <ion-grid>
       <ion-row>
-        <ion-col class="ion-text-center">
-        <img src="C:\Users\pc\Desktop\esercizi Deviskill\fumetteria\fumetteria\logo_devskill@2x.png">
-       </ion-col>
-      </ion-row>
-    </ion-grid>
-    <ion-grid class="set-grid">
-      <ion-row>
-        
         <ion-col class="ion-text-center">
           
-          <h6>Benvenuti</h6>
+        <img src="\assets\logo_devskill@2x.png" alt="Logo">
 
+        <h6>Benvenuti</h6>
+          
+       </ion-col>
+      </ion-row>
+      <br>
+      <br>
+    </ion-grid> 
+    <ion-grid class="set-grid">       
+      <ion-row > 
+        <ion-col>
+          <ion-item>
+            
+            <ion-label for="uname" position="stacked">Username</ion-label>
+            <ion-input id="uname" name="uname" placeholder="es: abc@deviskill.com"></ion-input>
+            <ion-icon slot="end" name="mail-sharp"></ion-icon>  
+            
+           </ion-item>
+           
         </ion-col>
       </ion-row>
-
+               
       <ion-row>
         <ion-col>
           <ion-item>
             
-            <ion-label for="uname" position="floating">Username</ion-label>
-            <ion-input id="uname" name="uname"></ion-input>
-            <ion-icon class="ion-align-self-end" name="mail-sharp"></ion-icon>
-
-          </ion-item>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col>
-          <ion-item>
+            <ion-label for="pass" position="stacked">Password</ion-label>
+            <ion-input id="pass" placeholder="inserisci password" name="pass" type="password"></ion-input>
+            <ion-icon slot="end" name="Lock-Closed"></ion-icon>
             
-            <ion-label for="pass" position="floating">Password</ion-label>
-            <ion-input id="pass" name="pass" type="password"></ion-input>
-            <ion-icon class="ion-align-self-end" name="Lock-Closed"></ion-icon>
-
           </ion-item>
         </ion-col>
       </ion-row>
@@ -58,6 +56,8 @@
 
 
     </ion-grid>
+  
+
   </div>
   </form>
 
