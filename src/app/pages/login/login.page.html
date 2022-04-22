@@ -28,7 +28,7 @@
           <ion-item>
             
             <ion-label for="uname" position="stacked">Username</ion-label>
-            <ion-input id="uname" name="uname" placeholder="es: abc@deviskill.com"></ion-input>
+            <ion-input id="pass" name="uname" [(ngModel)]="username" placeholder="es: abc@deviskill.com"></ion-input>
             <ion-icon slot="end" name="mail-sharp"></ion-icon>  
             
            </ion-item>
@@ -41,7 +41,7 @@
           <ion-item>
             
             <ion-label for="pass" position="stacked">Password</ion-label>
-            <ion-input id="pass" placeholder="inserisci password" name="pass" type="password"></ion-input>
+            <ion-input id="pass" placeholder="inserisci password"  name="pass" [(ngModel)]="password" type="password"></ion-input>
             <ion-icon slot="end" name="Lock-Closed"></ion-icon>
             
           </ion-item>
@@ -50,7 +50,7 @@
 
       <ion-row>
         <ion-col>
-          <ion-button class="ion-float-right">Login</ion-button> 
+          <ion-button (click)="clickDiLogin()"  class="ion-float-right">Login</ion-button> 
         </ion-col>
       </ion-row>
 
