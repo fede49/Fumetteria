@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tabella</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form> 
+     
+    <ion-grid >
+      <ion-row>
+
+        <ion-col class="ion-text-center" >
+          
+          <ion-label for="uname" position="stacked">GRADI</ion-label></ion-col>
+
+        <ion-col class="ion-text-center">
+          
+          <ion-label for="uname" position="stacked">DISTANZA</ion-label></ion-col>
+
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-label for="C" position="stacked">Celsius</ion-label>
+          <ion-input id="C" name="C" [(ngModel)]="celsius" (keyup)="cambioCelsius(celsius)" ></ion-input>
+        </ion-col>
+
+        <ion-col class="ion-text-center">
+          <ion-label for="F" position="stacked">Fahrenheit</ion-label>
+          <ion-input id="F" name="F" [(ngModel)]="fahrenheit" (keyup)="cambioFahrenheit(fahrenheit)" ></ion-input>
+        </ion-col>
+
+        <ion-col class="ion-text-center">
+          <ion-label for="KM" position="stacked">Kilometri</ion-label>
+          <ion-input id="KM" name="KM" [(ngModel)]="kilometri" (keyup)="cambioKm(kilometri)"></ion-input>
+        </ion-col>
+
+        <ion-col class="ion-text-center">
+          <ion-label for="MI" position="stacked">Miglia</ion-label>
+          <ion-input id="MI" name="MI" [(ngModel)]="miglia" (keyup)="cambioMi(miglia)" ></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+   
+  </form> 
+</ion-content>
