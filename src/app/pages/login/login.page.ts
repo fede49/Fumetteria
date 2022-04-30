@@ -8,12 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class LoginPage implements OnInit {
   username:string;
   password:string;
+  
 
   constructor() {}
-
+ 
   clickDiLogin():void{
-    alert("Ciao " + this.username  + ". " +"La tua password è " + this.password);
-  }
+    if(this.username !=null &&  this.password !=null){
+      
+     alert ("Ciao " + this.username  + ". " +"La tua password è " + this.password);
+}
+    
+else  alert("username o password non validi")
+
+  } 
+
+
 
   ngOnInit() {
   }
