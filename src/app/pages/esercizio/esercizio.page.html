@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>esercizio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+  <ion-item>
+  <ion-label position="stacked">inserisci numero</ion-label>
+  <ion-input type="number" id="n" name="n" [(ngModel)]="n"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked">inserisci numero</ion-label>
+  <ion-input type="number" id="m" name="m" [(ngModel)]="m"></ion-input>
+</ion-item>
+</ion-row>
+
+<ion-row>
+<ion-button class="ion-float-right" (click)="pD ()">Esegui operazione</ion-button> 
+</ion-row>
+
+<ion-row>
+<h3>il risultato è {{n}}  {{m}}  {{max}} </h3>
+</ion-row>
+</ion-content>
